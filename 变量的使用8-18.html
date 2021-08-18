@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量的使用</title>
+    <script>
+        // 弹出输入框 用户输入内容并将输入内容存储进变量内
+        var myname = prompt('请输入您的姓名');
+        // 弹出用户输入的内容
+        alert(myname);
+
+        // 变量的更新 
+        var myname = 'xxx';
+        console.log(myname);
+
+        myname = 'zzz';
+        console.log(myname);
+
+        // 声明变量的特殊情况
+        // 1. 只声明变量不赋值 会发生undefined
+        /* var nav;
+        console.log(nav);
+        // 2. 不声明变量不赋值直接使用 直接报错
+        console.log(news);
+        // 3. 不声明变量直接赋值  结果也会自动声明 但是不建议这种写法
+        myhome = '西西里';
+        console.log(myhome); */
+        // 变量的交换 
+        // 1. 首先需要建立一个临时变量
+        // 2. 再将需要交换的某个变量放入临时变量
+        // 3. 逐个将变量进行交换 输出打印即可
+        var temp;
+        var appleA = '苹果A';
+        var appleB = '苹果B';
+        var appleC = '苹果C';
+        var appleD = '苹果D';
+        temp=appleB;
+        appleB=appleC;
+        appleC=appleA;
+        appleD=temp;
+        console.log(appleB);
+        console.log(appleC);
+        console.log(appleD);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
